@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo{
+    font-family: "Brush Script MT","Brush Script Std",cursive;
+    font-size: 70px;
+    text-align: center;
+    background: linear-gradient(to right, rgb(0, 238, 255), rgb(0, 255, 191));
+    width: 100%;
+    height: 180px;
+    color: white;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    margin-top: 50px;
+    width: 400px;
+    font-size: 22px;
+}
+
+input{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 14px;
+    width: 300px;
+    height: 25px;
+    font-size: 19px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+select{
+    text-align: center;
+    height: 40px;
+    width: 180px;
+    margin-top: 10px;
+    margin-bottom: 14px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+select:has(option[value="masculino"]:checked){
+    background-color: rgb(148, 253, 253);
+}
+
+select:has(option[value="feminino"]:checked){
+    background-color: rgb(255, 194, 247);
+}
+
+select:has(option[value="nao_binario"]:checked){
+    background: linear-gradient(to right, rgb(161, 255, 255), rgb(255, 194, 247));
+}
+
+select option{
+    background-color: white;
+    cursor: pointer;
+}
+
+button{
+    height: 40px;
+    width: 85px;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    margin-bottom: 15px;
+    color: white;
+    background-color: rgb(0, 184, 0);
+    cursor: pointer;
+}
+
+button:hover{
+    transform: scale(1.2);
+    transition: transform 0.4s ease;
+    background-color: rgb(0, 151, 0);
+}
+
+button:active{
+    transform: scale(0.95);
+}
+
+.erro-email{
+    display: none;
+    color: red;
+    font-size: 13px;
+}
+
+input:invalid:not(:placeholder-shown)+.erro-email{
+    display: block;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro Médico Avicena - Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <p>Centro Médico</p>
+            <p>Avicena</p>
+        </div>
+    </header>
+    <center>
+        <form class="container" id="formulario">
+            <fieldset>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" required><br><br>
+            
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" placeholder="xxxx@gmail.com" required><br><br>
+                <span class="erro-email">E-mail inválido. Tente novamente</span>
+
+                <label>Data de nascimento:</label><br>
+                <input type="text" id="nascimento" placeholder="DD/MM/AAAA" required><br><br>
+
+                <label>Gênero:</label><br>
+                <select id="genero" required>><br><br>
+                    
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="nao_binario">Não-Binário</option>
+                    
+                </select><br><br>
+                
+                <label>Senha:</label><br>
+                <input type="password" id="senha" minlength="6" placeholder="Mínimo 6 caracteres" required><br><br>
+                
+                <label>Confirmação de senha:</label><br>
+                <input type="password" id="confirmacao_senha" minlength="6" placeholder="Mínimo 6 caracteres" required><br><br>
+                <span id="mensagem" class="mensagem"></span>
+
+                <button type="submit" class="botao-enviar">ENVIAR</button>
+            </fieldset>
+        </form>
+    </center>
+    <script src="cadastro.js"></script>
+</body>
+</html>

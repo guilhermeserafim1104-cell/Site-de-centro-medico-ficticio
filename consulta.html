@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro Médico Avicena - Agende sua consulta</title>
+    <link rel="stylesheet" href="consulta.css">
+</head>
+<body>
+    <header>
+        <p>Centro Médico</p>
+        <p>Avicena</p>
+    </header>
+    <h1>Agende sua consulta</h1>
+    <form id="formulario">
+        <div class="especializacao">
+            <label>Selecione a especialização</label><br>
+            <select name="especializacao" id="especializacao">
+                <option value="alergia">Alergia</option>
+                <option value="angiologia">Angiologia</option>
+                <option value="cardiologia">Cardiologia</option>
+                <option value="cirurgia_geral">Cirurgia Geral</option>
+                <option value="clinica_geral">Clínica Geral</option>
+                <option value="dermatologia">Dermatologia</option>
+                <option value="endocrinologia">Endocrinologia</option>
+                <option value="gastroenterologia">Gastroenterologia</option>
+                <option value="geriatria">Geriatria</option>
+                <option value="ginecologista">Ginecologista</option>
+                <option value="hematologia">Hematologia</option>
+                <option value="homeopatia">Homeopatia</option>
+                <option value="infectologia">Infectologia</option>
+                <option value="mastologia">Mastologia</option>
+                <option value="nefrologia">Nefrologia</option>
+                <option value="neurologia">Neurologia</option>
+                <option value="oftalmologia">Oftalmologia</option>
+                <option value="ortopedia">Ortopedia</option>
+                <option value="otorrinolaringologia">Otorrinolaringologia</option>
+                <option value="pediatria">Pediatria</option>
+                <option value="pneumologia">Pneumologia</option>
+                <option value="pre_natal">Pré-natal</option>
+                <option value="proctologia">Proctologia</option>
+                <option value="psiquiatria">Psiquiatria</option>
+                <option value="reumatologia">Reumatologia</option>
+                <option value="urologia">Urologia</option>
+            </select>
+        </div>
+        <div class="data">
+            <label>Selecione o dia e horário da consulta</label><br>
+            <label>Dia</label><br>
+            <input type="text" id="dia" class="dia" placeholder="xx/xx" required><br>
+            <label>Horário</label><br>
+            <input type="text" id="hora" class="hora" placeholder="xx:xx" required><br>
+            <button type="submit" class="botao">Marcar consulta</button>
+        </div>
+    </form>
+    <div id="mensagem" class="mensagem">Consulta agendada com sucesso</div>
+    <script src="consulta.js"></script>
+</body>
+</html>
